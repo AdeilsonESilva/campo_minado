@@ -22,7 +22,7 @@ class _CampoMinadoAppState extends State<CampoMinadoApp> {
   }
 
   _abrir(Campo campo) {
-    if (_venceu != null) return;
+    if (_venceu != null || campo.marcado) return;
 
     setState(() {
       try {
